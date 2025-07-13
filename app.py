@@ -22,6 +22,8 @@ app = dash.Dash(__name__, external_stylesheets=[dbc.themes.FLATLY], suppress_cal
 
 app.title = "Boaz Tulu Data Visualization Project"
 
+server = app.server
+
 app.layout = create_base_layout()
 
 # Callback to handle file upload and store data
